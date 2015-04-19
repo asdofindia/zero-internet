@@ -1,0 +1,13 @@
+{
+  "title": "Zero Internet",
+  "name": "zero-internet",
+  "version": "0.0.1",
+  "description": "How does zero-rated Internet feel like? Find out yourself",
+  "main": "index.js",
+  "author": "asdofindia",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
