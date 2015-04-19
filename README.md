@@ -12,3 +12,4 @@ How does zero-rated Internet feel like? Find out yourself
   - [ ] [Include updateRDF](https://developer.mozilla.org/en-US/docs/Extension_Versioning,_Update_and_Compatibility#Update_RDF_Format)
 - [ ] Take [tips from anaran](https://github.com/anaran/IssuePigeonFirefox/)
 - [ ] [Publish on AMO](https://addons.mozilla.org/en-US/developers/addon/submit/1)
+- [ ] Add a disable button
