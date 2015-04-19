@@ -1,9 +1,12 @@
-var self = require('sdk/self');
+var tag = "p";
+var data = require("sdk/self").data;
+var pageMod = require("sdk/page-mod");
 
-// a dummy function, to show how tests work.
-// to see how to test this function, look at test/test-index.js
-function dummy(text, callback) {
-  callback(text);
-}
-
-exports.dummy = dummy;
+pageMod.PageMod({
+  include: "*.mozilla.org",
+  contentScriptWhen: "start",
+  contentScriptFile: data.url("blocker.js"),
+  onAttach: function(worker) {
+    worker.port.emit("block");
+  }
+})
