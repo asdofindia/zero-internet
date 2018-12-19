@@ -1,0 +1,63 @@
+{
+  "manifest_version": 2,
+  "name": "Zero Internet",
+  "version": "0.1.0",
+  "description": "How does zero-rated Internet feel like? Find out yourself.\n\nWARNING: Almost the entire Internet will stop loading after you install this addon. That is how zero-rating works. Just disable Zero Internet from Tools->Addons->Extensions to be back on the Internet",
+  "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "exclude_matches": [
+            "*://*.internet.org/*",
+            "*://*.facebook.com/*",
+            "*://*.fb.com/*",
+            "*://*.aajtak.in/*",
+            "*://*.intoday.in/*",
+            "*://*.indiatoday.in/*",
+            "*://*.m.accuweather.com/*",
+            "*://*.amarujala.com/*",
+            "*://*.apspeaks.com/*",
+            "*://*.apspeaks-web.herokuapp.com/*",
+            "*://*.babajob.com/*",
+            "*://*.babycenter.com/*",
+            "*://*.mobilemamaalliance.org/*",
+            "*://*.in.mama.hub.unicore.io/*",
+            "*://*.bbc.com/*",
+            "*://*.bing.com/*",
+            "*://*.bhaskar.com/*",
+            "*://*.dictionary.com/*",
+            "*://*.espncricinfo.com/*",
+            "*://*.cricinfo.com/*",
+            "*://*.factsforlifeglobal.org/*",
+            "*://*.factsforlife.org/*",
+            "*://*.girleffect.org/*",
+            "*://*.hub.unicore.io/*",
+            "*://*.hungama.com/*",
+            "*://*.202.87.41.147/*",
+            "*://*.ibnlive.com/*",
+            "*://*.in.com/*",
+            "*://*.empowerwomen.org/*",
+            "*://*.220.226.104.36/*",
+            "*://*.m.jagran.com/*",
+            "*://*.m.jagranjosh.com/*",
+            "*://*.m.maalaimalar.com/*",
+            "*://*.manoramanews.com/*",
+            "*://*.messenger.com/*",
+            "*://*.olx.in/*",
+            "*://*.220.226.188.56/*",
+            "*://*.rmlglobal.com/*",
+            "*://*.blood.is/*",
+            "*://*.reference.com/*",
+            "*://*.m.wikipedia.org/*",
+            "*://*.m.wikihow.com/*"
+        ],
+        "js": ["data/blocker.js"],
+        "run_at": "document_start",
+        "all_frames": true
+      }
+  ],
+  "author": "Akshay S Dinesh",
+  "homepage_url": "http://learnlearn.in/zero-internet/",
+  "icons": {
+    "512": "icon.png"
+  }
+}
